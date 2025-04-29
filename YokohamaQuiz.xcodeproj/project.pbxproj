@@ -1,0 +1,460 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2D74BBBA2D8866CE00D12710 /* YokohamaQuizApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D74BBAC2D8866CE00D12710 /* YokohamaQuizApp.swift */; };
+		2D74BBBB2D8866CE00D12710 /* View+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D74BBAF2D8866CE00D12710 /* View+.swift */; };
+		2D74BBBC2D8866CE00D12710 /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D74BBB32D8866CE00D12710 /* QuizView.swift */; };
+		2D74BBBD2D8866CE00D12710 /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D74BBB42D8866CE00D12710 /* ScoreView.swift */; };
+		2D74BBBE2D8866CE00D12710 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D74BBB52D8866CE00D12710 /* StartView.swift */; };
+		2D74BBBF2D8866CE00D12710 /* StrokeBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D74BBB62D8866CE00D12710 /* StrokeBackground.swift */; };
+		2D74BBC02D8866CE00D12710 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D74BBB12D8866CE00D12710 /* Preview Assets.xcassets */; };
+		2D74BBC12D8866CE00D12710 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D74BBB82D8866CE00D12710 /* Assets.xcassets */; };
+		2D74BBC32D8868AE00D12710 /* QuizData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D74BBC22D8868AE00D12710 /* QuizData.swift */; };
+		2D74BBCA2D88701A00D12710 /* GenreSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D74BBC92D88701A00D12710 /* GenreSelectionView.swift */; };
+		2D8DB57E2DBA87B5007FB7C3 /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = 2D8DB57D2DBA87B5007FB7C3 /* GoogleMobileAds */; };
+		2D8DB5802DBBE712007FB7C3 /* RewardAdManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8DB57F2DBBE712007FB7C3 /* RewardAdManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2D74BB8F2D81754800D12710 /* YokohamaQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YokohamaQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D74BBAC2D8866CE00D12710 /* YokohamaQuizApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YokohamaQuizApp.swift; sourceTree = "<group>"; };
+		2D74BBAF2D8866CE00D12710 /* View+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+.swift"; sourceTree = "<group>"; };
+		2D74BBB12D8866CE00D12710 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2D74BBB32D8866CE00D12710 /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
+		2D74BBB42D8866CE00D12710 /* ScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
+		2D74BBB52D8866CE00D12710 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
+		2D74BBB62D8866CE00D12710 /* StrokeBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrokeBackground.swift; sourceTree = "<group>"; };
+		2D74BBB82D8866CE00D12710 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2D74BBC22D8868AE00D12710 /* QuizData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizData.swift; sourceTree = "<group>"; };
+		2D74BBC92D88701A00D12710 /* GenreSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreSelectionView.swift; sourceTree = "<group>"; };
+		2D8DB57F2DBBE712007FB7C3 /* RewardAdManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardAdManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		2D74BBC42D886E4200D12710 /* Storybords */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Storybords;
+			sourceTree = "<group>";
+		};
+		2D74BBCB2D8BF85400D12710 /* Models */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2D74BB8C2D81754800D12710 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D8DB57E2DBA87B5007FB7C3 /* GoogleMobileAds in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2D74BB862D81754800D12710 = {
+			isa = PBXGroup;
+			children = (
+				2D74BBB92D8866CE00D12710 /* YokohamaQuiz */,
+				2D74BB902D81754800D12710 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2D74BB902D81754800D12710 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2D74BB8F2D81754800D12710 /* YokohamaQuiz.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2D74BBAD2D8866CE00D12710 /* Apps */ = {
+			isa = PBXGroup;
+			children = (
+				2D74BBAC2D8866CE00D12710 /* YokohamaQuizApp.swift */,
+			);
+			path = Apps;
+			sourceTree = "<group>";
+		};
+		2D74BBAE2D8866CE00D12710 /* ConstantData */ = {
+			isa = PBXGroup;
+			children = (
+				2D74BBC22D8868AE00D12710 /* QuizData.swift */,
+				2D8DB57F2DBBE712007FB7C3 /* RewardAdManager.swift */,
+			);
+			path = ConstantData;
+			sourceTree = "<group>";
+		};
+		2D74BBB02D8866CE00D12710 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2D74BBAF2D8866CE00D12710 /* View+.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2D74BBB22D8866CE00D12710 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				2D74BBB12D8866CE00D12710 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2D74BBB72D8866CE00D12710 /* Viwes */ = {
+			isa = PBXGroup;
+			children = (
+				2D74BBB52D8866CE00D12710 /* StartView.swift */,
+				2D74BBB32D8866CE00D12710 /* QuizView.swift */,
+				2D74BBB42D8866CE00D12710 /* ScoreView.swift */,
+				2D74BBB62D8866CE00D12710 /* StrokeBackground.swift */,
+				2D74BBC92D88701A00D12710 /* GenreSelectionView.swift */,
+			);
+			path = Viwes;
+			sourceTree = "<group>";
+		};
+		2D74BBB92D8866CE00D12710 /* YokohamaQuiz */ = {
+			isa = PBXGroup;
+			children = (
+				2D74BBAD2D8866CE00D12710 /* Apps */,
+				2D74BBB72D8866CE00D12710 /* Viwes */,
+				2D74BBCB2D8BF85400D12710 /* Models */,
+				2D74BBB02D8866CE00D12710 /* Extensions */,
+				2D74BBAE2D8866CE00D12710 /* ConstantData */,
+				2D74BBC42D886E4200D12710 /* Storybords */,
+				2D74BBB22D8866CE00D12710 /* Preview Content */,
+				2D74BBB82D8866CE00D12710 /* Assets.xcassets */,
+			);
+			path = YokohamaQuiz;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2D74BB8E2D81754800D12710 /* YokohamaQuiz */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D74BB9D2D81754A00D12710 /* Build configuration list for PBXNativeTarget "YokohamaQuiz" */;
+			buildPhases = (
+				2D74BB8B2D81754800D12710 /* Sources */,
+				2D74BB8C2D81754800D12710 /* Frameworks */,
+				2D74BB8D2D81754800D12710 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				2D74BBC42D886E4200D12710 /* Storybords */,
+				2D74BBCB2D8BF85400D12710 /* Models */,
+			);
+			name = YokohamaQuiz;
+			packageProductDependencies = (
+				2D8DB57D2DBA87B5007FB7C3 /* GoogleMobileAds */,
+			);
+			productName = YokohamaQuiz;
+			productReference = 2D74BB8F2D81754800D12710 /* YokohamaQuiz.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2D74BB872D81754800D12710 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					2D74BB8E2D81754800D12710 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+				};
+			};
+			buildConfigurationList = 2D74BB8A2D81754800D12710 /* Build configuration list for PBXProject "YokohamaQuiz" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2D74BB862D81754800D12710;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				2D8DB57C2DBA87B5007FB7C3 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 2D74BB902D81754800D12710 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2D74BB8E2D81754800D12710 /* YokohamaQuiz */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2D74BB8D2D81754800D12710 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D74BBC02D8866CE00D12710 /* Preview Assets.xcassets in Resources */,
+				2D74BBC12D8866CE00D12710 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2D74BB8B2D81754800D12710 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D74BBC32D8868AE00D12710 /* QuizData.swift in Sources */,
+				2D74BBBA2D8866CE00D12710 /* YokohamaQuizApp.swift in Sources */,
+				2D74BBBB2D8866CE00D12710 /* View+.swift in Sources */,
+				2D74BBBC2D8866CE00D12710 /* QuizView.swift in Sources */,
+				2D74BBBD2D8866CE00D12710 /* ScoreView.swift in Sources */,
+				2D74BBCA2D88701A00D12710 /* GenreSelectionView.swift in Sources */,
+				2D74BBBE2D8866CE00D12710 /* StartView.swift in Sources */,
+				2D74BBBF2D8866CE00D12710 /* StrokeBackground.swift in Sources */,
+				2D8DB5802DBBE712007FB7C3 /* RewardAdManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		2D74BB9B2D81754A00D12710 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2D74BB9C2D81754A00D12710 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2D74BB9E2D81754A00D12710 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"YokohamaQuiz/Preview Content\"";
+				DEVELOPMENT_TEAM = 2TPNWRC7A3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = YokohamaQuiz/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.saitohryuta.YokohamaQuiz;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2D74BB9F2D81754A00D12710 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"YokohamaQuiz/Preview Content\"";
+				DEVELOPMENT_TEAM = 2TPNWRC7A3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = YokohamaQuiz/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.saitohryuta.YokohamaQuiz;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D74BB8A2D81754800D12710 /* Build configuration list for PBXProject "YokohamaQuiz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D74BB9B2D81754A00D12710 /* Debug */,
+				2D74BB9C2D81754A00D12710 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D74BB9D2D81754A00D12710 /* Build configuration list for PBXNativeTarget "YokohamaQuiz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D74BB9E2D81754A00D12710 /* Debug */,
+				2D74BB9F2D81754A00D12710 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2D8DB57C2DBA87B5007FB7C3 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googleads/swift-package-manager-google-mobile-ads.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2D8DB57D2DBA87B5007FB7C3 /* GoogleMobileAds */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2D8DB57C2DBA87B5007FB7C3 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */;
+			productName = GoogleMobileAds;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 2D74BB872D81754800D12710 /* Project object */;
+}
