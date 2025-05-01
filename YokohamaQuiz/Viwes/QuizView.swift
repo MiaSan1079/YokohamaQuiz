@@ -7,6 +7,9 @@
 
 import SwiftUI
 struct QuizView: View {
+    
+    @ObservedObject var adManager: RewardAdManager
+    
     @State var isShowingScoreView = false
     @State var isShowingResultSymbol = false
     @State var isAnswerCorrect = false
@@ -74,7 +77,7 @@ struct QuizView: View {
                             .clipShape(RoundedRectangle(cornerRadius: 10))
                     }
                     .fullScreenCover(isPresented: $isShowingScoreView) {
-                        ScoreView(scoreText: "\(quizItems.count)問中\(correctCount)問正解")
+                        ScoreView(adManager: adManager, scoreText: "\(quizItems.count)問中\(correctCount)問正解")
                     }
                 }
             }
@@ -99,6 +102,6 @@ struct QuizView: View {
     }
 }
 
-#Preview {
-    QuizView(quizItems: .constant(QuizData.yokohamaHistoryQuestions))
-}
+//#Preview {
+//    QuizView(quizItems: .constant(QuizData.yokohamaHistoryQuestions))
+//}

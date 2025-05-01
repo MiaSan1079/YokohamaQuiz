@@ -9,6 +9,8 @@ import SwiftUI
 
 struct GenreSelectionView: View {
     
+    @ObservedObject var adManager: RewardAdManager
+    
     @State var isshowingQuizView = false
     @State var selectedQuizData: [QuizItem] = []
     
@@ -60,11 +62,11 @@ struct GenreSelectionView: View {
             }
         }
         .fullScreenCover(isPresented: $isshowingQuizView) {
-            QuizView(quizItems: $selectedQuizData)
+            QuizView(adManager: adManager, quizItems: $selectedQuizData)
         }
     }
 }
 
-#Preview {
-    GenreSelectionView()
-}
+//#Preview {
+//    GenreSelectionView()
+//}

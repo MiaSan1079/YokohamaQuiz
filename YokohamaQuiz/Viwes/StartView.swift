@@ -10,6 +10,8 @@ import SwiftUI
 struct StartView: View {
     @State var isShowingGenreSelectionView = false
     
+    @StateObject private var adManager = RewardAdManager()
+    
     var body: some View {
         ZStack {
             VStack {
@@ -31,7 +33,7 @@ struct StartView: View {
                 .buttonStyle(.borderedProminent)
                 .tint(.originalYokohamaGreen)
                 .fullScreenCover(isPresented: $isShowingGenreSelectionView) {
-                    GenreSelectionView()
+                    GenreSelectionView(adManager: adManager)
                 }
             }
             Spacer()

@@ -29,15 +29,38 @@ class RewardAdManager: NSObject, ObservableObject, FullScreenContentDelegate {
         }
     }
     
-    func showAd(from root: UIViewController) {
+    func showAd() {
+        guard let topVC = RewardAdManager.topViewController() else {
+            print("表示可能はない")
+            return
+        }
+        
         if let ad = rewardedAd {
-            ad.present(from: root) {
+            ad.present(from: topVC) {
                 let reward = ad.adReward
                 print("User watched ad and earned: \(reward.amount) \(reward.type)")
+                self.loadAd()
             }
-        } else {
+        }
+        else {
             print("Ad not ready.")
         }
     }
+    
+    static func topViewController(base: UIViewController? = UIApplication.shared.connectedScenes
+        .compactMap { ($0 as? UIWindowScene)?.keyWindow }
+        .first?.rootViewController) -> UIViewController? {
+            
+            if let nav = base as? UINavigationController {
+                return topViewController(base: nav.visibleViewController)
+            }
+            if let tab = base as? UITabBarController {
+                return topViewController(base: tab.selectedViewController)
+            }
+            if let presented = base?.presentedViewController {
+                return topViewController(base: presented)
+            }
+            return base
+        }
 }
 

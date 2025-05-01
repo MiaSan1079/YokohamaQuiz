@@ -11,7 +11,7 @@ import GoogleMobileAds
 
 struct ScoreView: View {
     
-    @StateObject private var adManager = RewardAdManager()
+    @ObservedObject var adManager: RewardAdManager
     
     let scoreText: String
     
@@ -29,10 +29,7 @@ struct ScoreView: View {
                     .foregroundStyle(.originalYokohamaGreen)
                     .stroke(color: .originalYokohamaGold, width: 5)
                 Button("広告を見てみる") {
-                    if let rootVC = UIApplication.shared.connectedScenes.first as? UIWindowScene,
-                       let viewController = rootVC.windows.first?.rootViewController {
-                        adManager.showAd(from: viewController)
-                    }
+                    adManager.showAd()
                 }
                 .disabled(adManager.rewardedAd == nil)
                 .buttonStyle(.borderedProminent)
@@ -58,7 +55,7 @@ struct ScoreView: View {
     }
 }
 
-#Preview {
-    ScoreView(scoreText: "")
-}
+//#Preview {
+//    ScoreView(scoreText: "")
+//}
 
