@@ -32,7 +32,7 @@ struct QuizView: View {
 //                問題
                 VStack {
                     Text(quizItems[currentQuizIndex].question)
-                        .font(.title)
+                        .font(.title2)
                     quizItems[currentQuizIndex].questionImage?
                         .resizable()
                         .scaledToFit()

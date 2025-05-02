@@ -78,7 +78,7 @@ struct QuizData {
             correctAnswer: "296メートル"
         ),
         QuizItem(
-            question: "世界の地域ごとに動物の展示を行っている横浜市の大型動物園は",
+            question: "世界の地域ごとに動物の展示を行っている横浜市の大型動物園は？",
             choices: ["金沢動物園", "上野動物園", "よこはま動物園ズーラシア", "野毛山動物園"],
             correctAnswer: "よこはま動物園ズーラシア"
         ),
@@ -89,7 +89,7 @@ struct QuizData {
             correctAnswer: "オカピ"
         ),
         QuizItem(
-            question: "この写真のトラは「縞模様が細かく、体が小さい」のが特徴です。このトラの名前は何？",
+            question: "このトラの名前は？",
             questionImage: Image("Quiz_Image3"),
             choices: ["ベンガルトラ", "スマトラトラ", "タイガー" ,"トラッキー"],
             correctAnswer: "スマトラトラ"
