@@ -4,6 +4,12 @@
 <dict>
 	<key>GADApplicationIdentifier</key>
 	<string>ca-app-pub-3940256099942544~1458002511</string>
+	<key>NSUserTrackingUsageDescription
+NSUserTrackingUsageDescription
+NSUserTrackingUsageDescription
+NSUserTrackingUsageDescription</key>
+	<string>このアプリでは、より適切な広告を表示するためにユーザーの追跡の許可を求めます。
+このアプリではより適切な広告を表示するためにユーザーの追跡の許可を求めます</string>
 	<key>UILaunchScreen</key>
 	<dict>
 		<key>UIImageName</key>

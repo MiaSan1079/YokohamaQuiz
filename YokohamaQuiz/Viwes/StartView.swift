@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+import AppTrackingTransparency
+import AdSupport
 
 struct StartView: View {
     @State var isShowingGenreSelectionView = false
@@ -46,7 +48,31 @@ struct StartView: View {
                 .ignoresSafeArea(.all)
         )
         
+        .onAppear {
+            // ATTリクエストをここで呼び出す
+            requestTrackingPermission()
+        }
     }
+    
+    func requestTrackingPermission() {
+        if #available(iOS 14, *) {
+            ATTrackingManager.requestTrackingAuthorization { status in
+                switch status {
+                case .authorized:
+                    print("追跡が許可されました")
+                case .denied:
+                    print("追跡は拒否されました")
+                case .notDetermined:
+                    print("まだ決定されていません")
+                case .restricted:
+                    print("制限されています")
+                @unknown default:
+                    break
+                }
+            }
+        }
+    }
+    
 }
 
 #Preview {
